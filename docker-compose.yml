@@ -1,0 +1,9 @@
+services:
+  backend:
+    env_file:
+        "./.env"
+    build:
+      dockerfile: ./Dockerfile
+    image: "codylacey/whois-back"
+    ports:
+      - "8000:8000"
